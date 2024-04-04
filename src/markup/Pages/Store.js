@@ -41,7 +41,6 @@ const images = [
 var img1 = require("./../../images/background/bg2.jpg");
 var img2 = require("./../../images/background/bg1.jpg");
 var img3 = require("./../../images/background/bg5.jpg");
-var img4 = require("./../../images/background/bg3.jpg");
 
 class Store extends Component {
   render() {

@@ -4,13 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Index1 from "./Pages/Index1";
 
 import Store from "./Pages/Store";
-import Ourservices from "./Pages/Ourservices";
 import Faq from "./Pages/Faq";
-
-import Ourmenustyle1 from "./Pages/Ourmenustyle1";
-import Ourmenustyle2 from "./Pages/Ourmenustyle2";
-import Ourmenustyle3 from "./Pages/Ourmenustyle3";
-import Ourmenustyle4 from "./Pages/Ourmenustyle4";
 
 import Location from "./Pages/Location";
 import Contact from "./Pages/Contact";
@@ -37,13 +31,7 @@ class Markup extends Component {
           <Route path="/" exact component={Index1} />
 
           <Route path="/store" exact component={Store} />
-          <Route path="/our-services" exact component={Ourservices} />
           <Route path="/faq" exact component={Faq} />
-
-          <Route path="/our-menu-1" exact component={Ourmenustyle1} />
-          <Route path="/our-menu-2" exact component={Ourmenustyle2} />
-          <Route path="/our-menu-3" exact component={Ourmenustyle3} />
-          <Route path="/our-menu-4" exact component={Ourmenustyle4} />
 
           <Route path="/location" exact component={Location} />
           <Route path="/contact" exact component={Contact} />

@@ -18,7 +18,7 @@ class Slider extends Component {
               <div className="content">
                 <span>Food Shop</span>
                 <h2 className="title">Welcome To FoodCenter</h2>
-                <Link to={"/about-1"} className="btn btnhover">
+                <Link to={"/store"} className="btn btnhover">
                   About Us
                 </Link>
               </div>
@@ -28,48 +28,13 @@ class Slider extends Component {
             <div
               className="slide"
               style={{ backgroundImage: "url(" + slider2 + ")" }}
-            >
-              {/* <img className="d-block w-100 slider"	src={require('./../../images/main-slider/slide2.jpg')}	alt="Second slide"	/> */}
-              <div className="content">
-                <span>Cakes & Bakery</span>
-                <h2 className="title">Occasion Cakes</h2>
-                <h4 className="sub-title">The Best Coffee In China</h4>
-                <Link to={"/about-1"} className="btn btnhover">
-                  About Us
-                </Link>
-                <Link
-                  to={""}
-                  className="btn white"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
-                  Subscribe Now
-                </Link>
-              </div>
-            </div>
+            ></div>
           </Carousel.Item>
           <Carousel.Item>
             <div
               className="slide"
               style={{ backgroundImage: "url(" + slider3 + ")" }}
-            >
-              <div className="content">
-                <span>Cakes & Bakery</span>
-                <h2 className="title">Occasion Cakes</h2>
-                <h4 className="sub-title">The Best Coffee In China</h4>
-                <Link to={"/about-1"} className="btn btnhover">
-                  About Us
-                </Link>
-                <Link
-                  to={""}
-                  className="btn white"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
-                  Subscribe Now
-                </Link>
-              </div>
-            </div>
+            ></div>
           </Carousel.Item>
         </Carousel>
       </div>
