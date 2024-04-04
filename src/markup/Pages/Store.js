@@ -4,9 +4,6 @@ import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import slider2 from "./../../images/main-slider/image333d.jpg";
-import slider1 from "./../../images/main-slider/s_01.jpg";
-import slider3 from "./../../images/main-slider/s_11.jpg";
 
 const responsive = {
   desktop: {
@@ -26,7 +23,22 @@ const responsive = {
   },
 };
 
-var img1 = require("./../../images/banner/bnr1.jpg");
+const images = [
+  require("./../../images/store/s_01.jpg"),
+  require("./../../images/store/s_02.jpg"),
+  require("./../../images/store/s_03.jpg"),
+  require("./../../images/store/s_04.jpg"),
+  require("./../../images/store/s_05.jpg"),
+  require("./../../images/store/s_06.jpg"),
+  require("./../../images/store/s_07.jpg"),
+  require("./../../images/store/s_08.jpg"),
+  require("./../../images/store/s_09.jpg"),
+  require("./../../images/store/s_10.jpg"),
+  require("./../../images/store/s_11.jpg"),
+  require("./../../images/store/s_12.jpg"),
+];
+
+var img1 = require("./../../images/background/bg2.jpg");
 var img2 = require("./../../images/background/bg1.jpg");
 var img3 = require("./../../images/background/bg5.jpg");
 var img4 = require("./../../images/background/bg3.jpg");
@@ -99,7 +111,10 @@ class Store extends Component {
             </div>
             <div
               className="section-full content-inner bg-line-top bg-line-bottom"
-              style={{ backgroundImage: "url(" + img4 + " )" }}
+              style={{
+                backgroundImage: "url(" + img1 + " )",
+                backgroundSize: "cover",
+              }}
             >
               <div className="container">
                 <div className="row">
@@ -129,155 +144,16 @@ class Store extends Component {
                   autoPlay={this.props.deviceType !== "mobile" ? true : false}
                   autoPlaySpeed={2000}
                   keyBoardControl={true}
-                  containerClass="carousel-container"
                 >
-                  <div className="row tab-pane fade show active">
-                    <div className="dz-col col m-b30">
+                  {images.map((img, index) => (
+                    <div className="col" key={index}>
                       <div className="item-box shop-item style2">
                         <div className="item-img">
-                          <img
-                            src={require("./../../images/product/pizza/pic1.jpg")}
-                            alt=""
-                          />
-                        </div>
-                        <div className="item-info text-center">
-                          <h4 className="item-title">
-                            <Link to={"/shop-product-details"}>
-                              Summer Pizza
-                            </Link>
-                          </h4>
-                          <h5 className="price text-primary">
-                            <del>45</del>
-                            <span>$40</span>
-                          </h5>
-                          <div className="cart-btn">
-                            <Link
-                              to={"/shop-product-details"}
-                              className="btn btnhover radius-xl"
-                            >
-                              <i className="ti-shopping-cart"></i> Add To Cart
-                            </Link>
-                          </div>
+                          <img src={img} alt="" />
                         </div>
                       </div>
                     </div>
-                    <div className="dz-col col m-b30">
-                      <div className="item-box shop-item style2">
-                        <div className="item-img">
-                          <img
-                            src={require("./../../images/product/pizza/pic2.jpg")}
-                            alt=""
-                          />
-                        </div>
-                        <div className="item-info text-center">
-                          <h4 className="item-title">
-                            <Link to={"/shop-product-details"}>
-                              Pepperoni Pizza
-                            </Link>
-                          </h4>
-                          <h5 className="price text-primary">
-                            <del>45</del>
-                            <span>$40</span>
-                          </h5>
-                          <div className="cart-btn">
-                            <Link
-                              to={"/shop-product-details"}
-                              className="btn btnhover radius-xl"
-                            >
-                              <i className="ti-shopping-cart"></i> Add To Cart
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="dz-col col m-b30">
-                      <div className="item-box shop-item style2">
-                        <div className="item-img">
-                          <img
-                            src={require("./../../images/product/pizza/pic3.jpg")}
-                            alt=""
-                          />
-                        </div>
-                        <div className="item-info text-center">
-                          <h4 className="item-title">
-                            <Link to={"/shop-product-details"}>
-                              Apricot Chicken
-                            </Link>
-                          </h4>
-                          <h5 className="price text-primary">
-                            <del>45</del>
-                            <span>$40</span>
-                          </h5>
-                          <div className="cart-btn">
-                            <Link
-                              to={"/shop-product-details"}
-                              className="btn btnhover radius-xl"
-                            >
-                              <i className="ti-shopping-cart"></i> Add To Cart
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="dz-col col m-b30">
-                      <div className="item-box shop-item style2">
-                        <div className="item-img">
-                          <img
-                            src={require("./../../images/product/pizza/pic4.jpg")}
-                            alt=""
-                          />
-                        </div>
-                        <div className="item-info text-center">
-                          <h4 className="item-title">
-                            <Link to={"shop-product-details"}>
-                              Liguria Pizza
-                            </Link>
-                          </h4>
-                          <h5 className="price text-primary">
-                            <del>45</del>
-                            <span>$40</span>
-                          </h5>
-                          <div className="cart-btn">
-                            <Link
-                              to={"shop-product-details"}
-                              className="btn btnhover radius-xl"
-                            >
-                              <i className="ti-shopping-cart"></i> Add To Cart
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="dz-col col m-b30">
-                      <div className="item-box shop-item style2">
-                        <div className="item-img">
-                          <img
-                            src={require("./../../images/product/pizza/pic5.jpg")}
-                            alt=""
-                          />
-                        </div>
-                        <div className="item-info text-center">
-                          <h4 className="item-title">
-                            <Link to={"/shop-product-details"}>
-                              Pizza Veronese
-                            </Link>
-                          </h4>
-                          <h5 className="price text-primary">
-                            <del>45</del>
-                            <span>$40</span>
-                          </h5>
-                          <div className="cart-btn">
-                            <Link
-                              to={"/shop-product-details"}
-                              className="btn btnhover radius-xl"
-                            >
-                              <i className="ti-shopping-cart"></i> Add To Cart
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </Carousel>
                 ;
               </div>

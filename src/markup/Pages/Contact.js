@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
-import GoogleMaps from "simple-react-google-maps";
-import Header from "./../Layout/Header";
-import Footer from "./../Layout/Footer";
+import Header from "../Layout/Header";
+import Footer from "../Layout/Footer";
 
-var bgimg1 = require("./../../images/banner/bnr1.jpg");
+var bgimg1 = require("./../../images/background/bg2.jpg");
 var bgimg2 = require("./../../images/background/bg5.jpg");
 
 class Contact extends Component {
@@ -20,7 +19,7 @@ class Contact extends Component {
           >
             <div className="container">
               <div className="dlab-bnr-inr-entry">
-                <h1 className="text-white">Contact</h1>
+                <h1 className="text-white">Contact Us</h1>
 
                 <div className="breadcrumb-row">
                   <ul className="list-inline">
@@ -29,7 +28,7 @@ class Contact extends Component {
                         <i className="fa fa-home"></i>
                       </Link>
                     </li>
-                    <li>Contact</li>
+                    <li>Contact Us</li>
                   </ul>
                 </div>
               </div>
@@ -45,7 +44,7 @@ class Contact extends Component {
             >
               <div className="container">
                 <div className="row">
-                  <div className="col-xl-4 col-lg-6 col-md-6 d-flex m-md-b30 m-lg-b30">
+                  <div className="col-xl-6 col-lg-6 col-md-6 d-flex m-md-b30 m-lg-b30">
                     <div className="p-a30 border contact-area border-1 align-self-stretch radius-sm bg-white">
                       <h3 className="m-b5">Quick Contact</h3>
                       <p>
@@ -65,7 +64,7 @@ class Contact extends Component {
                               Address:
                             </h6>
                             <p>
-                              123 West Street, Melbourne Victoria 3000 Australia
+                              6195 Estate Frydenhoj, #26A St, Thomas, VI 00802
                             </p>
                           </div>
                         </li>
@@ -80,7 +79,7 @@ class Contact extends Component {
                             <h6 className="text-uppercase m-tb0 dlab-tilte">
                               Email:
                             </h6>
-                            <p>info@example.com</p>
+                            <p>customerservice@foodcentervi.com</p>
                           </div>
                         </li>
                         <li className="icon-bx-wraper left">
@@ -93,7 +92,7 @@ class Contact extends Component {
                             <h6 className="text-uppercase m-tb0 dlab-tilte">
                               PHONE
                             </h6>
-                            <p>+61 3 8376 6284</p>
+                            <p>(340)-777-8806</p>
                           </div>
                         </li>
                       </ul>
@@ -133,7 +132,7 @@ class Contact extends Component {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xl-4 col-lg-6 col-md-6 m-md-b30 m-lg-b30">
+                  <div className="col-xl-6 col-lg-6 col-md-6 m-md-b30 m-lg-b30">
                     <div className="p-a30 bg-gray clearfix radius-sm contact-form-box">
                       <h3 className="m-b20">Send Message Us</h3>
                       <div className="dzFormMsg"></div>
@@ -216,15 +215,6 @@ class Contact extends Component {
                         </div>
                       </form>
                     </div>
-                  </div>
-                  <div className="col-xl-4 col-lg-12 d-flex">
-                    <GoogleMaps
-                      apiKey={"AIzaSyBbHk3eFodSk_DSGzv8dd_dIJpZvVDyg4s "}
-                      style={{ height: "500px", width: "100%" }}
-                      zoom={6}
-                      center={{ lat: 37.4224764, lng: -122.0842499 }}
-                      markers={{ lat: 37.4224764, lng: -122.0842499 }} //optional
-                    />
                   </div>
                 </div>
               </div>

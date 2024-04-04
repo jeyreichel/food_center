@@ -1,3 +1,25 @@
 # react
-React Js Resturant Website
-![restroking](https://user-images.githubusercontent.com/96910749/209430511-44809ad4-ba79-4973-84e8-d29e713c205f.jpg)
+
+React.JS Food Center.
+
+## Requipment.
+
+If you run this app, you must use node version 16.12.0.
+
+## Installation
+
+```
+npm install or yarn add
+```
+
+## Run
+
+```
+npm start or npm run dev
+```
+
+##
+
+```
+npm run build
+```

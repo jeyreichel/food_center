@@ -22,7 +22,7 @@ class Footer extends Component {
                   <ul>
                     <li>
                       <i className="fa fa-map-marker"></i>
-                      <p>Virgin Island, U.S.</p>
+                      <p>6195 Estate Frydenhoj, #26A St, Thomas, VI 00802</p>
                     </li>
                     <li>
                       <i className="fa fa-phone"></i>
@@ -62,7 +62,7 @@ class Footer extends Component {
                       <Link to={"/privacy"}>Privacy Policy</Link>
                     </li>
                     <li>
-                      <Link to={"/contact-1"}>Contact Us</Link>
+                      <Link to={"/contact"}>Contact Us</Link>
                     </li>
                     <li>
                       <Link to={"/disclaimer"}>Disclaimer</Link>
@@ -112,14 +112,17 @@ class Footer extends Component {
               <div className="col-lg-6 col-md-6 text-left">
                 {" "}
                 <span>
-                  Copyright © 2024 Food Center. all rights reserved.
+                  <Link to="/copyright">
+                    <u>Copyright</u>
+                  </Link>{" "}
+                  © 2024 Food Center. all rights reserved.
                 </span>{" "}
               </div>
               <div className="col-lg-6 col-md-6 text-right">
                 <div className="widget-link">
                   <ul>
                     <li>
-                      <Link to={"about-1"}>About Us</Link>
+                      <Link to={"store"}>Store</Link>
                     </li>
                     <li>
                       <Link to={"faq"}>Link/FAQ</Link>

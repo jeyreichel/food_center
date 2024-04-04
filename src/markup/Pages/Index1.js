@@ -53,7 +53,7 @@ class Index1 extends Component {
                         <h2 className="dlab-tilte text-white">Dairy</h2>
                         <p>Lorem Ipsum is simply</p>
                         <div className="dlab-separator style1 bg-primary"></div>
-                        <Link to={"/diary"} className="btn btnhover">
+                        <Link to={"/dairy"} className="btn btnhover">
                           More details{" "}
                           <i className="fa fa-angle-double-right m-l5"></i>
                         </Link>

@@ -11129,7 +11129,7 @@ footer.footer-white .footer-bottom a {
 .text-center.section-head p {
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
+    max-width: 80%;
 	padding-top: 0;
 }
 .text-white {
@@ -11996,11 +11996,7 @@ ol.commentlist li .star-rating {
             animation-name: ball-pulse-rise-even; }
   .ball-pulse-rise > div:nth-child(2n-1) {
     -webkit-animation-name: ball-pulse-rise-odd;
-            animation-name: ball-pulse-rise-odd; }
-#loading-area.pizza-loading{
-	background-image:url(../images/pizza.gif);
-	background-size:100px;
-}			
+            animation-name: ball-pulse-rise-odd; }		
 /* ------------------------------------------------
 30. CONTACT
 ------------------------------------------------ */

@@ -37,7 +37,7 @@ class Header extends Component {
             <div className="container clearfix">
               <div className="logo-header mostion">
                 <Link to={"/"} className="dez-page">
-                  <img src={require("./../../images/logo1.png")} alt="" />
+                  <img src={require("./../../images/logo.png")} alt="" />
                 </Link>
               </div>
               <button
@@ -68,35 +68,8 @@ class Header extends Component {
                     <Link to={"/"}>Home</Link>
                   </li>
                   <li>
-                    <Link to={"/store"}>Store</Link>
-                  </li>
-                  <li>
                     <Link to={""}>
-                      Our Menu<i className="fa fa-chevron-down"></i>
-                    </Link>
-                    <ul className="sub-menu">
-                      <li>
-                        <Link to={"/our-menu-1"}>Menu Style 1</Link>
-                      </li>
-                      <li>
-                        <Link to={"/our-menu-2"}>Menu Style 2</Link>
-                      </li>
-                      <li>
-                        <Link to={"/our-menu-3"}>Menu Style 3</Link>
-                      </li>
-                      <li>
-                        <Link to={"/our-menu-4"}>Menu Style 4</Link>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <ul className="nav navbar-nav nav2">
-                  <li className="has-mega-menu">
-                    <Link to={"/location"}>Location</Link>
-                  </li>
-                  <li>
-                    <Link to={""}>
-                      Product <i className="fa fa-chevron-down"></i>
+                      Sale <i className="fa fa-chevron-down"></i>
                     </Link>
                     <ul className="sub-menu">
                       <li>
@@ -129,7 +102,37 @@ class Header extends Component {
                     </ul>
                   </li>
                   <li>
-                    <Link to={"/contact-1"}>Contact Us</Link>
+                    <Link to={"/store"}>Store</Link>
+                  </li>
+                </ul>
+                <ul className="nav navbar-nav nav2">
+                  <li className="has-mega-menu">
+                    <Link to={"/location"}>Location</Link>
+                  </li>
+                  <li>
+                    <Link to={""}>
+                      Our Page<i className="fa fa-chevron-down"></i>
+                    </Link>
+                    <ul className="sub-menu">
+                      <li>
+                        <Link to={"/condition"}>Terms & Condition</Link>
+                      </li>
+                      <li>
+                        <Link to={"/privacy"}>Privacy & Policy</Link>
+                      </li>
+                      <li>
+                        <Link to={"/copyright"}>Copyright</Link>
+                      </li>
+                      <li>
+                        <Link to={"/disclaimer"}>Disclaimer</Link>
+                      </li>
+                      <li>
+                        <Link to={"/bulletin"}>Bulletin</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link to={"/contact"}>Contact Us</Link>
                   </li>
                 </ul>
               </div>
