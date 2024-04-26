@@ -42,7 +42,7 @@ var img1 = require("./../../images/background/bg2.jpg");
 var img2 = require("./../../images/background/bg1.jpg");
 var img3 = require("./../../images/background/bg5.jpg");
 
-class Store extends Component {
+class AboutUs extends Component {
   render() {
     return (
       <>
@@ -166,4 +166,4 @@ class Store extends Component {
   }
 }
 
-export default Store;
+export default AboutUs;
