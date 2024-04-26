@@ -69,7 +69,7 @@ class Header extends Component {
                   </li>
                   <li>
                     <Link to={""}>
-                      Sale <i className="fa fa-chevron-down"></i>
+                      Store <i className="fa fa-chevron-down"></i>
                     </Link>
                     <ul className="sub-menu">
                       <li>
@@ -102,7 +102,7 @@ class Header extends Component {
                     </ul>
                   </li>
                   <li>
-                    <Link to={"/store"}>Store</Link>
+                    <Link to={"/about_us"}>About Us</Link>
                   </li>
                 </ul>
                 <ul className="nav navbar-nav nav2">

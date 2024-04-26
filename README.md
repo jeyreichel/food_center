@@ -18,7 +18,7 @@ npm install or yarn add
 npm start or npm run dev
 ```
 
-##
+## build
 
 ```
 npm run build

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Index1 from "./Pages/Index1";
 
-import Store from "./Pages/Store";
+import AboutUs from "./Pages/AbutUs";
 import Faq from "./Pages/Faq";
 
 import Location from "./Pages/Location";
@@ -30,7 +30,7 @@ class Markup extends Component {
         <Switch>
           <Route path="/" exact component={Index1} />
 
-          <Route path="/store" exact component={Store} />
+          <Route path="/about_us" exact component={AboutUs} />
           <Route path="/faq" exact component={Faq} />
 
           <Route path="/location" exact component={Location} />

@@ -16,9 +16,8 @@ class Slider extends Component {
               style={{ backgroundImage: "url(" + slider1 + ")" }}
             >
               <div className="content">
-                <span>Food Shop</span>
                 <h2 className="title">Welcome To FoodCenter</h2>
-                <Link to={"/store"} className="btn btnhover">
+                <Link to={"/about_us"} className="btn btnhover">
                   About Us
                 </Link>
               </div>
